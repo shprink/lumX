@@ -284,7 +284,7 @@ angular.module('lumx.dropdown', [])
                 unlinkList();
                 LxDropdownService.open($scope);
             }
-            else
+            else if ($scope.isDropped) {
             {
                 linkList();
                 LxDropdownService.close($scope);
